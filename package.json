@@ -12,10 +12,9 @@
   "author": "Silver Softwerks",
   "license": "ISC",
   "devDependencies": {
-    "@SS/react-ui-dev-dependencies": "file:///mnt/c/Users/scsil/code/silver-softwerks/react-ui-dev-dependencies"
+    "@SS/react-ui-dev-dependencies": "git+https://github.com/silversoftwerks/react-ui-dev-dependencies.git"
   },
   "dependencies": {
-    "@SS/react-ui-dependencies": "file:///mnt/c/Users/scsil/code/silver-softwerks/react-ui-dependencies",
-    "@SS/react-ui-dev-dependencies": "file:///mnt/c/Users/scsil/code/silver-softwerks/react-ui-dev-dependencies"
+    "@SS/react-ui-dependencies": "git+https://github.com/silversoftwerks/react-ui-dependencies.git"
   }
 }
