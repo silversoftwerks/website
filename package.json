@@ -1,0 +1,21 @@
+{
+  "name": "@SS/react-ui-template",
+  "version": "0.1.0",
+  "description": "Template for react ui-components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Silver Softwerks",
+  "license": "ISC",
+  "devDependencies": {
+    "@SS/react-ui-dev-dependencies": "file:///mnt/c/Users/scsil/code/silver-softwerks/react-ui-dev-dependencies"
+  },
+  "dependencies": {
+    "@SS/react-ui-dependencies": "file:///mnt/c/Users/scsil/code/silver-softwerks/react-ui-dependencies",
+    "@SS/react-ui-dev-dependencies": "file:///mnt/c/Users/scsil/code/silver-softwerks/react-ui-dev-dependencies"
+  }
+}
