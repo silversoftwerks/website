@@ -1,2 +1,3 @@
-var module = require('@SS/webpack-base');
-module.exports = module
+var webpackTemplateConfig = require("@SS/webpack-template/webpack.config");
+var webpackConfig = {};
+module.exports = webpackTemplateConfig(__dirname, webpackConfig);
