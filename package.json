@@ -1,5 +1,5 @@
 {
-  "name": "@SS/react-ui-template",
+  "name": "@SS/website",
   "version": "0.1.0",
   "description": "Template for react ui-components",
   "main": "index.js",
@@ -17,5 +17,10 @@
   },
   "dependencies": {
     "@SS/react-ui-dependencies": "git+https://github.com/silversoftwerks/react-ui-dependencies.git"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silversoftwerks/website.git"
+  },
+  "homepage": "https://github.com/silversoftwerks/website#readme"
 }
