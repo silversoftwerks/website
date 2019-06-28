@@ -7,7 +7,7 @@ import Text from "@SS/design-system/src/components/typography/Text.jsx";
 import { Page } from "./Page";
 const App = () => (
   <Page>
-    <Grid>
+    <Grid columns={2}>
       <Column>
         <Box justifyContent="center" alignItems="center">
           <Text>Hello World</Text>
