@@ -4,8 +4,7 @@ import Grid from "@SS/design-system/src/components/layout/Grid.jsx";
 import Column from "@SS/design-system/src/components/layout/Column.jsx";
 import Box from "@SS/design-system/src/components/layout/Box";
 import Text from "@SS/design-system/src/components/typography/Text.jsx";
-const Page = ({ children, ...rest }) => <section>{children}</section>;
-
+import { Page } from "./Page";
 const App = () => (
   <Page>
     <Grid>
