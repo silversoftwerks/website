@@ -9,12 +9,14 @@ const App = () => (
   <Page>
     <Grid>
       <Column>
-        <Box>
+        <Box justifyContent="center" alignItems="center">
           <Text>Hello World</Text>
         </Box>
       </Column>
       <Column>
-        <Text>GoodBye World</Text>
+        <Box justifyContent="center" alignItems="center">
+          <Text>GoodBye World</Text>
+        </Box>
       </Column>
     </Grid>
   </Page>
