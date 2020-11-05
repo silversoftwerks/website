@@ -15,7 +15,12 @@ export const Billboard = () => (
       alignItems="center"
     >
       <LandingLogo padding={32} />
-      <Box height="fit-contents" justifyContent="center" alignItems="flex-end">
+      <Box
+        height="fit-contents"
+        justifyContent="center"
+        alignItems="flex-end"
+        paddingBottom="32px"
+      >
         <FullName />
       </Box>
     </Box>

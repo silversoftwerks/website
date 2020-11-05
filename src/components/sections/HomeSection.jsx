@@ -7,21 +7,12 @@ import { routes } from "../../routes/index";
 
 export function HomeSection({}) {
   return (
-    <Box>
+    <Box flexWrap="wrap">
       <Box flexDirection="column" padding="16px">
-        <Link to={routes.pitch} style={{ textDecoration: "none" }}>
-          <PitchSection />
-        </Link>
+        <PitchSection />
       </Box>
-      <Box
-        flexDirection="column"
-        alignItems="flex-end"
-        flexShrink="2"
-        padding="16px"
-      >
-        <Link to={routes.contact} style={{ textDecoration: "none" }}>
-          <ContactSection />
-        </Link>
+      <Box flexDirection="column" padding="16px">
+        <ContactSection />
       </Box>
     </Box>
   );

@@ -5,6 +5,7 @@ import { Text } from "@SS/design-system/src/components/content/typography/Text";
 import { Link } from "react-router-dom";
 import { routes } from "../../routes/index";
 import { appColors } from "../../pages/appColors";
+import { Icon } from "../../../../design-system/src/components/iconography/Icon";
 export function ContactSection({}) {
   return (
     <>
@@ -15,30 +16,62 @@ export function ContactSection({}) {
       >
         Contact Us
       </Header>
-      <Box flexDirection="column" padding="16px">
-        <Box flexDirection="column" paddingBottom="16px" alignItems="flex-end">
-          <Text fontWeight="bold" color={appColors.primary.yellow}>
-            Sales
+      <ContactList />
+    </>
+  );
+}
+
+const Contact = ({ title, name, email, color }) => {
+  return (
+    <>
+      <Text fontWeight="bold" color={appColors.primary.yellow}>
+        {title}
+      </Text>
+      <Box flexDirection="column" padding={8} alignItems="flex-end">
+        <a
+          href={`mailto:${email}`}
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <Text display="flex" color={appColors.primary.black}>
+            {name}
+            <Icon icon="email" paddingLeft="8px" fill={color}></Icon>
           </Text>
-          <Link
-            to="https://github.com/silversoftwerks"
-            style={{ textDecoration: "none" }}
-          >
-            <Text color={appColors.primary.black}>Tyler Silverstein</Text>
-          </Link>
-        </Box>
-        <Box flexDirection="column" paddingBottom="16px" alignItems="flex-end">
-          <Text fontWeight="bold" color={appColors.primary.yellow}>
-            Product
-          </Text>
-          <Link
-            to="https://github.com/silversoftwerks"
-            style={{ textDecoration: "none" }}
-          >
-            <Text color={appColors.primary.black}>Scott Silverstein</Text>
-          </Link>
-        </Box>
+        </a>
       </Box>
     </>
+  );
+};
+
+const contacts = [
+  {
+    title: "Customer Relations",
+    email: "tyler@succulentstraws.com",
+    name: "Tyler Silverstein",
+  },
+  {
+    title: "Sales",
+    email: "salse@succulentstraws.com",
+    name: "Sales at Succulent Straws",
+  },
+  {
+    title: "Product",
+    email: "scott@succulentstraws.com",
+    name: "Scott Silverstein",
+  },
+];
+const colors = [
+  appColors.primary.green,
+  appColors.primary.yellow,
+  appColors.primary.red,
+];
+function ContactList() {
+  return (
+    <Box flexDirection="column" padding={8} alignItems="flex-end">
+      {contacts.map(({ name, email, title }, i, array, color = colors[i]) => (
+        <Contact name={name} email={email} title={title} color={color} />
+      ))}
+    </Box>
   );
 }

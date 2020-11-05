@@ -1,6 +1,7 @@
 import React from "react";
 import { Page } from "@SS/design-system/src/components/layout/views/Page";
 import { Box } from "@SS/design-system/src/components/layout/spacers/Box";
+import { appColors } from "./appColors";
 
 export const PageTemplate = ({ header, content }) => (
   <Page>
