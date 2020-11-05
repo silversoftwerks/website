@@ -5,7 +5,7 @@ import { Text } from "@SS/design-system/src/components/content/typography/Text";
 import { Link } from "react-router-dom";
 import { routes } from "../../routes/index";
 import { appColors } from "../../pages/appColors";
-import Icon from "@SS/design-system/src/components/iconography/Icon";
+import { Icon } from "../../../../design-system/src/components/iconography/Icon";
 export function PitchSection({}) {
   return (
     <>
