@@ -17,7 +17,8 @@
     "@SS/react-ui-dev-dependencies": "git+https://github.com/silversoftwerks/react-ui-dev-dependencies.git"
   },
   "dependencies": {
-    "@SS/react-ui-dependencies": "git+https://github.com/silversoftwerks/react-ui-dependencies.git"
+    "@SS/react-ui-dependencies": "git+https://github.com/silversoftwerks/react-ui-dependencies.git",
+    "react-router-dom": "^5.2.0"
   },
   "repository": {
     "type": "git",
