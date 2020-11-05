@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "@SS/design-system/src/components/layout/Box";
-import Billboard from "@SS/design-system/src/components/typography/Billboard";
+import { Box } from "@SS/design-system/src/components/layout/spacers/Box";
+import { Billboard } from "@SS/design-system/src/components/content/typography/Billboard";
 
 const Logo = ({
   children,
@@ -22,7 +22,7 @@ const Logo = ({
       {new Array(times)
         .fill(0)
         .map((v, i) => i)
-        .map(v => (
+        .map((v) => (
           <polygon
             points="0,0 128,0 128,128"
             fill="transparent"
