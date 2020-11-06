@@ -7,7 +7,7 @@ export const FullName = () => (
   <div>
     <Header
       zIndex={99}
-      filter={"drop-shadow(1px -10px 13px rgba(0,0,0,0.2))"}
+      filter={"drop-shadow(rgba(0, 0, 0, 0.2) 2px -2px 2px)"}
       headerPadding={{ paddingBottom: "0" }}
       color={colorsAbstract.primary.white}
     >
