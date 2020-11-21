@@ -34,7 +34,7 @@ export const Stripes = () => {
       <Box
         transition="2s"
         width={`${yellow}px`}
-        backgroundColor={colorsAbstract.primary.yellow}
+        backgroundColor={colorsAbstract.primary.red}
       />
       <Box
         transition="2s"

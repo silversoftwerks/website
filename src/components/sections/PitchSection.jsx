@@ -11,8 +11,8 @@ export function PitchSection({}) {
     <>
       <Header
         accented
-        color={appColors.primary.yellow}
-        accentColor={appColors.primary.green}
+        color={appColors.primary.black}
+        accentColor={appColors.primary.yellow}
       >
         Poly Agave Straws
       </Header>
@@ -64,7 +64,7 @@ export function PitchSection({}) {
             size={8}
             icon="sync"
             paddingRight={8}
-            fill={appColors.primary.red}
+            fill={appColors.primary.blue}
           ></Icon>
           <Text color={appColors.primary.black}>Biodegradable</Text>
         </Box>

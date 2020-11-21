@@ -12,8 +12,8 @@ export function ContactSection({}) {
     <>
       <Header
         accented
-        color={appColors.primary.yellow}
-        accentColor={appColors.primary.green}
+        color={appColors.primary.black}
+        accentColor={appColors.primary.yellow}
       >
         Contact Us
       </Header>
@@ -25,7 +25,7 @@ export function ContactSection({}) {
 const Contact = ({ title, name, email, color }) => {
   return (
     <>
-      <Text fontWeight="bold" color={appColors.primary.yellow}>
+      <Text fontWeight="bold" color={appColors.primary.black}>
         {title}
       </Text>
       <Box flexDirection="column" padding={8} alignItems="flex-end">
@@ -65,7 +65,7 @@ const contacts = [
 const colors = [
   appColors.primary.green,
   appColors.primary.yellow,
-  appColors.primary.red,
+  appColors.primary.blue,
 ];
 function ContactList() {
   return (

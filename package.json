@@ -1,9 +1,10 @@
 {
-  "name": "@SS/website",
-  "version": "0.1.0",
+  "name": "@SS/website/succulentStraws",
+  "version": "1.0.0",
   "description": "Template for react ui-components",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
     "webpack": "webpack",
