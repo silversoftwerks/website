@@ -38,7 +38,7 @@ const Back = () => {
 const Front = ({}) => {
   return (
     <Box
-      background={`linear-gradient(165deg, ${appColors.primary.black} 55%, ${appColors.primary.white} 55% 95%, ${appColors.primary.red} 95%)`}
+      background={`linear-gradient(165deg, ${appColors.primary.green} 55%, ${appColors.primary.white} 55% 95%, ${appColors.primary.green} 95%)`}
       padding={16}
       width="350px"
       height="200px"
@@ -46,32 +46,32 @@ const Front = ({}) => {
       justifyContent="space-between"
     >
       <Box flexDirection="column">
-        <Text fontWeight="bold" color={appColors.primary.white}>
+        <Text fontWeight="bold" color={appColors.primary.black}>
           Sales
         </Text>
         <Box flexDirection="column" alignItems="flex-start">
-          <Text display="flex" color={appColors.primary.yellow}>
-            <Icon
+          <Text display="flex" color={appColors.primary.white}>
+            {/* <Icon
               icon="web"
               paddingRight="8px"
               fill={appColors.primary.yellow}
-            />
+            /> */}
             succulentstraws.com
           </Text>
         </Box>
         <Box flexDirection="column" alignItems="flex-start">
-          <Text display="flex" color={appColors.primary.green}>
-            <Icon
+          <Text display="flex" color={appColors.primary.white}>
+            {/* <Icon
               icon="email"
               paddingRight="8px"
               fill={appColors.primary.green}
-            />
+            /> */}
             sales@succulentstraws.com
           </Text>
         </Box>
         <Box flexDirection="column" alignItems="flex-start">
           <Text display="flex" color={appColors.primary.blue}>
-            <Icon
+            {/* <Icon
               icon="phone"
               paddingRight="4px"
               fill={appColors.primary.blue}
@@ -82,7 +82,7 @@ const Front = ({}) => {
               paddingLeft="4px"
               paddingRight="8px"
               fill={appColors.primary.blue}
-            />
+            /> */}
             410-913-7518
           </Text>
         </Box>
@@ -127,10 +127,10 @@ function CompanyName({
     >
       succulent
       <Icon
-        size={3}
+        size={6}
         fill={appColors.primary.green}
         padding={4}
-        icon="spa"
+        icon="agave"
       ></Icon>
       straws
     </Header>
