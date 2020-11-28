@@ -1,5 +1,5 @@
 {
-  "name": "@SS/website/succulentStraws",
+  "name": "@SS/website-succulentStraws",
   "version": "1.0.0",
   "description": "Template for react ui-components",
   "main": "index.js",

@@ -20,6 +20,9 @@ const Back = () => {
       justifyContent="space-between"
       padding={16}
     >
+      {/* <Box transform="rotate(195deg) translate(-18px, 4px)">
+        {spikeLine(270, 6)}
+      </Box> */}
       <Box
         height="100%"
         flexDirection="column"
@@ -32,6 +35,9 @@ const Back = () => {
           accent={appColors.primary.black}
         />
       </Box>
+      {/* <Box transform="rotate(15deg) translate(-18px, 4px)">
+        {spikeLine(270, 6)}
+      </Box> */}
     </Box>
   );
 };
@@ -45,67 +51,140 @@ const Front = ({}) => {
       flexDirection="column"
       justifyContent="space-between"
     >
+      {/* <Box height="0px" transform="rotate(165deg) translate(250px, -140px)">
+        {spikeLine(10, 1, 13)}
+      </Box> */}
       <Box flexDirection="column">
-        <Text fontWeight="bold" color={appColors.primary.black}>
-          Sales
-        </Text>
-        <Box flexDirection="column" alignItems="flex-start">
-          <Text display="flex" color={appColors.primary.white}>
-            {/* <Icon
-              icon="web"
-              paddingRight="8px"
-              fill={appColors.primary.yellow}
-            /> */}
-            succulentstraws.com
-          </Text>
+        <Box justifyContent="flex-start">
+          <Header
+            accented={false}
+            headerPadding={{
+              paddingBottom: 0,
+            }}
+            color={appColors.primary.white}
+            accentColor={appColors.primary.yellow}
+            fontSize="1.5rem"
+            lineHeight="1.75rem"
+            width="min-content"
+          >
+            Bio‑degradable Sustainable Durable
+          </Header>
         </Box>
-        <Box flexDirection="column" alignItems="flex-start">
-          <Text display="flex" color={appColors.primary.white}>
-            {/* <Icon
-              icon="email"
-              paddingRight="8px"
-              fill={appColors.primary.green}
-            /> */}
-            sales@succulentstraws.com
-          </Text>
-        </Box>
-        <Box flexDirection="column" alignItems="flex-start">
-          <Text display="flex" color={appColors.primary.blue}>
-            {/* <Icon
-              icon="phone"
-              paddingRight="4px"
-              fill={appColors.primary.blue}
-            />
-            &
-            <Icon
-              icon="message"
-              paddingLeft="4px"
-              paddingRight="8px"
-              fill={appColors.primary.blue}
-            /> */}
-            410-913-7518
-          </Text>
-        </Box>
-      </Box>
-      <Box justifyContent="flex-end">
-        <Header
-          accented={false}
-          headerPadding={{
-            paddingBottom: 0,
-          }}
-          color={appColors.primary.yellow}
-          accentColor={appColors.primary.yellow}
-          textAlign="right"
-          fontSize="1.5rem"
-          lineHeight="1.75rem"
-          width="min-content"
+        <Box
+          flexDirection="column"
+          alignItems="flex-end"
+          transform="translate(0px, -26px)"
         >
-          Durable Sustainable Bio‑degradable
-        </Header>
+          <Text
+            lineHeight={1.5}
+            fontWeight="bold"
+            color={appColors.primary.green}
+          >
+            Sales
+          </Text>
+          <Box flexDirection="row" justifyContent="flex-end">
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.blue}
+              whiteSpace="nowrap"
+            >
+              (
+            </Text>
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.green}
+              whiteSpace="nowrap"
+            >
+              410
+            </Text>
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.blue}
+              whiteSpace="nowrap"
+              paddingRight="2px"
+            >
+              )
+            </Text>
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.green}
+              whiteSpace="nowrap"
+            >
+              913 7518
+              <Icon
+                icon="phone"
+                paddingLeft="8px"
+                fill={appColors.primary.green}
+              />
+            </Text>
+          </Box>
+          <Box flexDirection="row" justifyContent="flex-end">
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.green}
+            >
+              succulentstraws.com
+              <Icon
+                icon="web"
+                paddingLeft="8px"
+                fill={appColors.primary.green}
+              />
+            </Text>
+          </Box>
+          <Box flexDirection="row" justifyContent="flex-end">
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.green}
+            >
+              sales
+            </Text>
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.blue}
+              paddingLeft="2px"
+              paddingRight="2px"
+            >
+              @
+            </Text>
+            <Text
+              lineHeight={1.5}
+              display="flex"
+              color={appColors.primary.green}
+            >
+              succulentstraws.com
+              <Icon
+                icon="email"
+                paddingLeft="8px"
+                fill={appColors.primary.green}
+              />
+            </Text>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
 };
+
+function spikeLine(length, count, size = 2) {
+  //l=count(pr+22) => l/count = pr+22
+  return new Array(count)
+    .fill(0)
+    .map(() => (
+      <Icon
+        size={size}
+        fill={appColors.primary.red}
+        icon="spike"
+        paddingRight={Math.floor(length / count - 22)}
+      ></Icon>
+    ));
+}
 
 function CompanyName({
   accented = true,
@@ -126,12 +205,21 @@ function CompanyName({
       // filter="drop-shadow(0px 1px 0px rgba(0,0,0,0.23)"
     >
       succulent
-      <Icon
-        size={6}
-        fill={appColors.primary.green}
-        padding={4}
-        icon="agave"
-      ></Icon>
+      <Box flexDirection="column" height={"40px"}>
+        <Icon
+          size={4}
+          padding={4}
+          fill={appColors.primary.green}
+          icon="agave"
+        ></Icon>
+        <Icon
+          boxStyle={{ transform: "translate(0, -40px)" }}
+          size={4}
+          padding={4}
+          fill={appColors.primary.blue}
+          icon="agave_tip"
+        ></Icon>
+      </Box>
       straws
     </Header>
   );
