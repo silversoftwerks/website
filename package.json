@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@SS/react-ui-dependencies": "git+https://github.com/silversoftwerks/react-ui-dependencies.git",
+    "react-facebook-pixel": "^1.0.4",
     "react-router-dom": "^5.2.0"
   },
   "repository": {
