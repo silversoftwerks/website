@@ -30,7 +30,7 @@ const App = () => (
     <ContactRoute />
     <PitchRoute />
     <BusinessCardRoute />
-    {/* <Redirect exact from="/" to={routes.home} /> */}
+    <Redirect exact from="/" to={routes.home} />
   </BrowserRouter>
 );
 ReactDOM.render(<App />, document.getElementById("react-root"));
